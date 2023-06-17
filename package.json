@@ -1,13 +1,16 @@
 {
-  "name": "multislider",
-  "version": "1.0.0",
+  "name": "@spiwadim/multi-slider",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/spiwadim"
+  },
+  "version": "1.0.1",
   "description": "Multi slider component",
   "scripts": {
     "rollup": "rollup -c",
     "test": "test"
   },
   "author": "Vadim Sp",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.1",
     "@rollup/plugin-node-resolve": "^15.1.0",
