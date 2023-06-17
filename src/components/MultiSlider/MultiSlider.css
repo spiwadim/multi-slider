@@ -1,0 +1,72 @@
+.multi-slider {
+    position: relative;
+    height: 30px;
+    display: block;
+  }
+  .multi-slider .back-line{
+    position: absolute;
+    height: 10px;
+    display: block;
+    top: 10px;
+    width: 100%;
+    z-index: 0;
+    border-radius: 5px;
+    background-color: #205073;
+  }
+  
+  .multi-slider .block{
+    position: absolute;
+    height: 30px;
+    display: block;
+    z-index: 1;
+    opacity: 0.9;
+    min-width: 1px;
+    border-radius: 3px;
+  }
+  .multi-slider .block .start-ancor{
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    display: block;
+    top:0;
+    bottom: 0;
+    z-index: 2;
+    mix-blend-mode: difference;
+    left: 0;
+  }
+  .multi-slider .block .end-ancor{
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    display: block;
+    top:0;
+    bottom: 0;
+    z-index: 2;
+    mix-blend-mode: difference;
+    right: 0;
+  }
+  .multi-slider .block .start-ancor:hover,.multi-slider .block .end-ancor:hover {
+    background-color: white;
+    cursor: ew-resize;
+    opacity: 0.6;
+  }
+  .multi-slider .block .hint{
+    padding: 3px;
+    position: absolute;
+    font-size: 11px;
+    line-height: 11px;
+    height: 30px;
+    width: autopx;
+    display: block;
+    bottom: -18px;
+    height: 12px;
+    z-index: 2;
+    border-radius: 3px;
+    background-color: rgb(24, 17, 235);
+    color: white;
+    left: 0;
+  }
+  .multi-slider .block .hint.end{
+    left: auto;
+    right: 0;
+  }
